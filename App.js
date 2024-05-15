@@ -1,11 +1,19 @@
 import React from "react";
-import Notebook from "./Components/Notebook/Notebook";
-import Notebookdata from "./Components/Data/Data";
+import Cart from "./Components/Addcart/Cart";
+
+import Cartprovider from "./Components/Cartprovider/Cartprovider";
+import Product from "./Components/Products/Product";
+
+
 function App() {
   return (
     <div className="App">
-      <Notebook />
-      <Notebookdata/>
+      <Cartprovider>
+        <Cart />
+        <Product />
+        {/* <Portaldata/> */}
+      </Cartprovider>
+      
     </div>
   );
 }
